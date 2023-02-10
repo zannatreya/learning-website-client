@@ -1,12 +1,20 @@
-import React, { useState } from "react";
+import React, { useContext, useState } from "react";
 import { Link } from "react-router-dom";
+import { AuthContext } from "../../../Context/AuthProvider/AuthProvider";
 import logo from "../../../Images/img/logo1.png";
 
 const Header = () => {
   const [navbar, setNavbar] = useState(false);
+  const { user, logOut, dark, setDark } = useContext(AuthContext);
+
+  const handleLogOut = () => {
+    logOut()
+      .then(() => {})
+      .catch((err) => console.error(err));
+  };
 
   return (
-    <nav className="w-full fixed z-10 shadow-lg bg-white ">
+    <nav className="w-full z-10 shadow-lg bg-white ">
       <div className="justify-between px-4 mx-auto lg:max-w-7xl md:items-center md:flex md:px-8">
         <div>
           <div className="flex items-center justify-between py-3 md:py-5 md:block">
@@ -76,13 +84,15 @@ const Header = () => {
                 <Link to="/courses">Courses</Link>
               </li>
 
-              {/* {user?.uid ? (
+              {user?.uid ? (
                 <>
                   <li className="text-indigo-600 font-semibold text-xl hover:text-indigo-400">
-                    <Link onClick={handleLogOut}>Log Out</Link>
+                    <Link to="" onClick={handleLogOut}>
+                      Log Out
+                    </Link>
                   </li>
                   <li className="text-indigo-600 font-semibold text-xl hover:text-indigo-400">
-                    <Link>
+                    <Link to="">
                       <div
                         className="tooltip tooltip-bottom"
                         data-tip={
@@ -109,7 +119,7 @@ const Header = () => {
                     <Link to="/register">Sign Up</Link>
                   </li>
                 </>
-              )} */}
+              )}
             </ul>
           </div>
         </div>

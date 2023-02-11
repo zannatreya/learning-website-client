@@ -2,6 +2,7 @@ import React, { useContext, useState } from "react";
 import { Link } from "react-router-dom";
 import { AuthContext } from "../../../Context/AuthProvider/AuthProvider";
 import logo from "../../../Images/img/logo1.png";
+import ThemeToggle from "../../ThemeToggle";
 
 const Header = () => {
   const [navbar, setNavbar] = useState(false);
@@ -120,6 +121,7 @@ const Header = () => {
                   </li>
                 </>
               )}
+              <ThemeToggle></ThemeToggle>
             </ul>
           </div>
         </div>

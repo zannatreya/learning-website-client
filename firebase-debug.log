@@ -1,0 +1,25 @@
+[debug] [2023-05-30T04:40:29.353Z] ----------------------------------------------------------------------
+[debug] [2023-05-30T04:40:29.354Z] Command:       C:\Program Files\nodejs\node.exe C:\Users\user\AppData\Roaming\npm\node_modules\firebase-tools\lib\bin\firebase.js init hosting
+[debug] [2023-05-30T04:40:29.354Z] CLI Version:   12.2.1
+[debug] [2023-05-30T04:40:29.355Z] Platform:      win32
+[debug] [2023-05-30T04:40:29.355Z] Node Version:  v18.0.0
+[debug] [2023-05-30T04:40:29.355Z] Time:          Tue May 30 2023 10:40:29 GMT+0600 (Bangladesh Standard Time)
+[debug] [2023-05-30T04:40:29.355Z] ----------------------------------------------------------------------
+[debug] 
+[debug] [2023-05-30T04:40:29.361Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2023-05-30T04:40:29.361Z] > authorizing via signed-in user (zannatreya123@gmail.com)
+[info] 
+     ######## #### ########  ######## ########     ###     ######  ########
+     ##        ##  ##     ## ##       ##     ##  ##   ##  ##       ##
+     ######    ##  ########  ######   ########  #########  ######  ######
+     ##        ##  ##    ##  ##       ##     ## ##     ##       ## ##
+     ##       #### ##     ## ######## ########  ##     ##  ######  ########
+
+You're about to initialize a Firebase project in this directory:
+
+  C:\Projects\1-react-practice\learning-website-client
+
+Before we get started, keep in mind:
+
+  * You are currently outside your home directory
+
